@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="/Bootstrap/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><span class="text-warning">Toy</span>Shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cont">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/Bootstrap/Assests/project-1-img/home-1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/Bootstrap/Assests/project-1-img/home-2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/Bootstrap/Assests/project-1-img/home-3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <h1 class="text-center">Most Popular Toys</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-evenly">
+    <div class="col-md-3 text-center mt-3">
+      <img src="https://img.icons8.com/?size=1x&id=MMpJL7XqGJHA&format=png">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellendus nulla doloremque rem provident.
+        Cupiditate qui maiores ipsam nam? Quos?</p>
+    </div>
+
+    <div class="col-md-3 text-center mt-3">
+      <img src="https://img.icons8.com/?size=1x&id=eSjpvvUPMH1K&format=png">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellendus nulla doloremque rem provident.
+        Cupiditate qui maiores ipsam nam? Quos?</p>
+    </div>
+
+    <div class="col-md-3 text-center mt-3">
+      <img src="https://img.icons8.com/?size=1x&id=MMpJL7XqGJHA&format=png">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellendus nulla doloremque rem provident.
+        Cupiditate qui maiores ipsam nam? Quos?</p>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-evenly">
+    <div class="col-md-5 text-center mt-3">
+      <h3>Location</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242118.1700600569!2d73.69815404900672!3d18.524545039866503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1690828876733!5m2!1sen!2sin"
+        width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="col-md-5 text-center mt-3 " >
+      <h3 id="cont">Contact</h3>
+      <form>
+        <div class="mb-3 pt-5">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" aria-describedby="emailHelp">
+        </div>
+
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">Enter Your Query</label>
+          <input type="text" class="form-control" id="desc">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <div class="row justify-content-evenly text-bg-secondary">
+    <div class="col-md-3 text-center mt-3">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellendus nulla doloremque rem provident.
+        Cupiditate qui maiores ipsam nam? Quos?</p>
+    </div>
+
+    <div class="col-md-3 text-center mt-3">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellendus nulla doloremque rem provident.
+        Cupiditate qui maiores ipsam nam? Quos?</p>
+    </div>
+
+    <div class="col-md-3 text-center  mt-3">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellendus nulla doloremque rem provident.
+        Cupiditate qui maiores ipsam nam? Quos?</p>
+    </div>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+
+
+</html>
